@@ -1,4 +1,5 @@
 // All coding questions and answers go here. Watch video on how to submit this assignment.
+console.log("Code-JS4-Week7-Assignment:");
 
 //Coding Steps:
 
@@ -9,17 +10,45 @@
        a. Programmatically subtract the value of the first element in the array from the value in the last element of the array.
            - Do not use numbers to reference the last element, find it programmatically.
            - ages[7] - ages[0] is not allowed!
-       b. Add a new age to your array and repeat the step above to ensure it is dynamic. (works for arrays of different lengths).
-       c. Use a loop to iterate through the array and calculate the average age.
-
 */
+
+let ages = [3, 9, 23, 64, 2, 8, 28, 93];
+console.log("Ages Array: ", ages);
+
+
+let minusAge = ages[ages.length - 1]; // Accessing the last element of the array
+console.log("Minus Age Value:", minusAge - ages[0]); // Subtract 1st element from last element and get the value: 90
+
+
+//  1b. Add a new age to your array and repeat the step above to ensure it is dynamic. (works for arrays of different lengths).
+ages.push(45); // Add a new age to the array
+console.log("Updated Ages Array: ", ages); // Display the updated array
+let minusAgePush = ages[ages.length - 1]; // Accessing the last element of the array
+console.log("Pushed Minus Age Value:", minusAgePush - ages[0]); // Subtract 1st element from last element and get the value: 42
+
+
+
+// 1c. Use a loop to iterate through the array and calculate the average age.
+let sumOfAges = 0; // Initialize the sum of ages
+
+for (let i = 0; i < ages.length; i++) {
+    //console.log(i, "test");
+    sumOfAges += ages[i]; // Add each age to the sum
+    console.log("Index:", i, "Sum of Ages:", sumOfAges);
+}
+console.log("Sum of Ages:", sumOfAges); // Calculate the sum of ages: 228
+let averageAge = sumOfAges / ages.length; // Calculate the average age
+console.log("Average Age:", averageAge); // Calculate the average age: 30.55
+
+
+
 
 /*    
    2. Create an array called names that contains the following values: 'Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'.
        a. Use a loop to iterate through the array and calculate the average number of letters per name.
        b. Use a loop to iterate through the array again and concatenate all the names together, separated by spaces.
 
- */
+*/
 
 // 3. How do you access the last element of any array?
 
