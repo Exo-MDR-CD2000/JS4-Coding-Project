@@ -99,6 +99,13 @@ From documentation:
         let nameLengths = [5, 3, 4];             // create a new array
 */
 
+let nameLengths = []; // Initialize the name lengths array
+
+for (let i = 0; i < names.length; i++) {
+    nameLengths.push(names[i].length); // Add the length of each name to the name lengths array
+    console.log("Index", i, "Name Lengths Array:", nameLengths); // Display the name lengths array by each index
+}
+
 // 6. Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array.
 
 // 7. Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in 'Hello' and 3, I would expect the function to return 'HelloHelloHello').
