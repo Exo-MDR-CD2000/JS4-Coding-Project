@@ -50,6 +50,30 @@ console.log("Average Age:", averageAge); // Calculate the average age: 30.55
 
 */
 
+let names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
+console.log("Names Array: ", names);
+
+//2a.
+let sumOfLetters = 0; // Initialize the sum of letters
+
+for (let i = 0; i < names.length; i++) {
+    sumOfLetters += names[i].length; // Add the length of each name to the sum
+    console.log("Index:", i, "Name:", names[i], "Sum of Letters:", sumOfLetters); // Shows the index, name, and sum of letters
+}
+
+console.log("Sum of Letters:", sumOfLetters); // Calculate the sum of letters: 21
+let averageLetters = sumOfLetters / names.length; // Calculate the average number of letters per name
+console.log("Average Number of Letters per Name:", averageLetters); // Calculate the average number of letters per name: 3.5
+
+//2b.
+let concatNames = ""; // Initialize the concatenated names
+for (let i = 0; i <names.length; i++) {
+    concatNames += names[i] + " "; // Concatenate each name with a space
+    console.log("Index:", i, "Concatenated Names:", concatNames); // Shows the index and concatenated names
+}
+
+
+
 // 3. How do you access the last element of any array?
 
 // 4. How do you access the first element of any array?
