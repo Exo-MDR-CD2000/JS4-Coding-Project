@@ -76,7 +76,20 @@ for (let i = 0; i <names.length; i++) {
 
 // 3. How do you access the last element of any array?
 
+console.log("Last element of name array:", names[names.length -1]); // Access the last element of the array: Bob
+/* 
+From documentation: 
+    console.log(myArray[myArray.length - 1]);
+*/
+
 // 4. How do you access the first element of any array?
+
+console.log("First element of name array:", names[0]); // Access the first element of the array: Sam
+
+/*
+From documentation: 
+    console.log(myArray[0]);
+*/
 
 /* 
     5. Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
