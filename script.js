@@ -313,5 +313,23 @@ function calculatePictures10Mp (memorySize) {
 calculatePictures8Mp(2400); // Calculate the total number of pictures that can be stored in 2400mb: 1000 pictures
 calculatePictures10Mp(2400); // Calculate the total number of pictures that can be stored in 2400mb: 800 pictures
 
-// The funtion above determines how many pictures of a given megapixel camera can be stored in a given memory size.
+// The function above determines how many pictures of a given megapixel camera can be stored in a given memory size.
 // In this case, I used both an 8mp and 10mp camera and created two functions to calculate the total number of pictures that can be stored.
+
+
+// The function below allows for two arguments to be passed in so that memory size and file size can be calculated.
+
+
+
+
+function calculatePics (memorySize, fileSize) {
+    console.log("Memory Size:", memorySize, "File Size per Picture:", fileSize + " mb");
+    let totalPictures = memorySize / fileSize; // Calculate the total number of pictures that can be stored
+    console.log("Total Pictures:", totalPictures); // Display the total number of pictures that can be stored
+    return totalPictures; // Return the total number of pictures that can be stored
+}
+
+
+
+
+calculatePics(2400, 6);
