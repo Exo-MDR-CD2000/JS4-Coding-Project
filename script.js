@@ -247,10 +247,10 @@ function compareTwoAverages (array1, array2) {
     console.log("Average1:", average1, "Average2:", average2); // Display the average of numbers for array 1 and array 2
 
     if (average1 > average2) {
-        console.log("True: Average 1 is greater"); // Return true if the average of numbers for array 1 is greater than the average of numbers for array 2
+        console.log(true, "Average 1 is greater"); // Return true if the average of numbers for array 1 is greater than the average of numbers for array 2
         return true;
     } else if (average1 < average2) {
-        console.log("False: Average 2 is greater"); // Return false if the average of numbers for array 1 is not greater than the average of numbers for array 2
+        console.log(false, "Average 2 is greater"); // Return false if the average of numbers for array 1 is not greater than the average of numbers for array 2
         return false;
     } else {
         console.log("Numbers are equal"); // Return false if the average of numbers for array 1 is not greater than the average of numbers for array 2
@@ -261,4 +261,24 @@ function compareTwoAverages (array1, array2) {
 compareTwoAverages(arrayNums4, arrayNums5);
 // 12. Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
 
+// function willBuyDrink ( isHotOutside, moneyInPocket) {
+//     console.log("IsHotOutside:", isHotOutside, "MoneyInPocket:", moneyInPocket);
+//     if (isHotOutside && moneyInPocket > 10.50) {
+//         console.log(true, "Go buy a drink"); // Return true if it is hot outside and if moneyInPocket is greater than 10.50
+//         return true;
+//     } else {
+//         console.log(false, "Either too cold or no money"); // Return false if it is not hot outside or if moneyInPocket is not greater than 10.50
+//         return false;
+//     }
+// }
+
+
+function willBuyDrink ( isHotOutside, moneyInPocket) {
+    console.log("IsHotOutside:", isHotOutside, "MoneyInPocket:", moneyInPocket);
+    let buyDrink = isHotOutside && moneyInPocket > 10.50;
+    console.log("Buy a Drink?", buyDrink);
+    return buyDrink;
+}
+
+willBuyDrink(true, 8,);
 // 13. Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
