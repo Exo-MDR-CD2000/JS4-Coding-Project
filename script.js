@@ -323,7 +323,7 @@ calculatePictures10Mp(2400); // Calculate the total number of pictures that can 
 
 
 function calculatePics (memorySize, fileSize) {
-    console.log("Memory Size:", memorySize, "File Size per Picture:", fileSize + " mb");
+    console.log("Memory Size:", memorySize, "File Size per Picture:", fileSize + "mb");
     let totalPictures = memorySize / fileSize; // Calculate the total number of pictures that can be stored
     console.log("Total Pictures:", totalPictures); // Display the total number of pictures that can be stored
     return totalPictures; // Return the total number of pictures that can be stored
