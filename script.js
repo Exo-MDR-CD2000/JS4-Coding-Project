@@ -261,17 +261,6 @@ function compareTwoAverages (array1, array2) {
 compareTwoAverages(arrayNums4, arrayNums5);
 // 12. Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
 
-// function willBuyDrink ( isHotOutside, moneyInPocket) {
-//     console.log("IsHotOutside:", isHotOutside, "MoneyInPocket:", moneyInPocket);
-//     if (isHotOutside && moneyInPocket > 10.50) {
-//         console.log(true, "Go buy a drink"); // Return true if it is hot outside and if moneyInPocket is greater than 10.50
-//         return true;
-//     } else {
-//         console.log(false, "Either too cold or no money"); // Return false if it is not hot outside or if moneyInPocket is not greater than 10.50
-//         return false;
-//     }
-// }
-
 
 function willBuyDrink ( isHotOutside, moneyInPocket) {
     console.log("IsHotOutside:", isHotOutside, "MoneyInPocket:", moneyInPocket);
@@ -281,4 +270,48 @@ function willBuyDrink ( isHotOutside, moneyInPocket) {
 }
 
 willBuyDrink(true, 8,);
+
+
+/* function willBuyDrink ( isHotOutside, moneyInPocket) {
+    console.log("IsHotOutside:", isHotOutside, "MoneyInPocket:", moneyInPocket);
+    if (isHotOutside && moneyInPocket > 10.50) {
+        console.log(true, "Go buy a drink"); // Return true if it is hot outside and if moneyInPocket is greater than 10.50
+        return true;
+    } else {
+        console.log(false, "Either too cold or no money"); // Return false if it is not hot outside or if moneyInPocket is not greater than 10.50
+        return false;
+    }
+}
+*/
+
+
 // 13. Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
+
+
+/* Create a function called calculatePictures that will determine how many pictures can be stored in a given memory size. 
+The camera has an 8mp sensor. Use the parameters below. Use megabytes as the unit of measurement.
+
+1000mb = 1gb
+1 picture = 2.4mb
+
+*/
+
+function calculatePictures8Mp (memorySize) {
+    console.log("Memory Size:", memorySize);
+    let totalPictures = memorySize / 2.4; // Calculate the total number of pictures that can be stored
+    console.log("Total Pictures for 8mp:", totalPictures); // Display the total number of pictures that can be stored
+    return totalPictures; // Return the total number of pictures that can be stored
+}
+
+function calculatePictures10Mp (memorySize) {
+    console.log("Memory Size:", memorySize);
+    let totalPictures = memorySize / 3; // Calculate the total number of pictures that can be stored
+    console.log("Total Pictures for 10mp:", totalPictures); // Display the total number of pictures that can be stored
+    return totalPictures; // Return the total number of pictures that can be stored
+}
+
+calculatePictures8Mp(2400); // Calculate the total number of pictures that can be stored in 2400mb: 1000 pictures
+calculatePictures10Mp(2400); // Calculate the total number of pictures that can be stored in 2400mb: 800 pictures
+
+// The funtion above determines how many pictures of a given megapixel camera can be stored in a given memory size.
+// In this case, I used both an 8mp and 10mp camera and created two functions to calculate the total number of pictures that can be stored.
