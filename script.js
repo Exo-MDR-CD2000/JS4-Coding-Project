@@ -117,7 +117,35 @@ for (let i = 0; i < nameLengths.length; i++) {
 }
 // 7. Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in 'Hello' and 3, I would expect the function to return 'HelloHelloHello').
 
+// function concatenateWord (word, n) {
+//     let result = ""; // Initialize the result
+//     for (let i = 0; i < n; i++) {
+//         result += word; // Concatenate the word to itself n number of times
+//     }
+//     return result; // Return the concatenated word
+// }
+
+// console.log("Concatenated Word:", concatenateWord("Jose", 3)); // Concatenate the word "Hello" to itself 3 times: HelloHelloHello
+
+function concatWord (word, n) {
+    console.log("WordParameter:", word, "NumberParameter:", n);
+    let concat = word.repeat(n); // Concatenate the word to itself n number of times
+    console.log("Concatenated Word:", concat); // Display the concatenated word
+}
+
+concatWord("Jag", 5); // Concatenate the word "Hello" to itself 3 times: HelloHelloHello
+
+
 // 8. Write a function that takes two parameters, firstName and lastName, and returns a full name. The full name should be the first and the last name separated by a space.
+
+
+function fullName (firstName, lastName) {
+    let fullName = firstName + " " + lastName; // Concatenate the first and last name separated by a space
+    console.log("Full Name:", fullName); // Display the full name
+}
+
+fullName("Jose", "Guillen"); // Concatenate the first name "Jose" and last name "Guillen" separated by a space: Jose Guillen
+
 
 // 9. Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 
