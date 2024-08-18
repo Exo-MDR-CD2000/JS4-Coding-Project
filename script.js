@@ -149,6 +149,28 @@ fullName("Jose", "Guillen"); // Concatenate the first name "Jose" and last name 
 
 // 9. Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 
+let arrayNums1 = [10, 20, 30, 40]; // array 1
+let arrayNums2 = [2, 4, 6, 8]; // array 2
+
+function sumNumbersArray (array) {
+    let total = 0; // Initialize the sum of numbers
+
+    for (let i = 0; i < array.length; i++) {
+       // console.log(i, "test");
+       total += array[i]; // Add each number to the sum
+       console.log("Total:", total); // Display the sum of numbers
+    }
+    if (total > 100) {
+        console.log("Total", total, "True"); // Return true if the sum of numbers is greater than 100
+        return true;
+    } else {
+        console.log("Total", total, "false"); // Return false if the sum of numbers is not greater than 100
+        return false // Return false if the sum of numbers is not greater than 100
+    }
+}
+sumNumbersArray(arrayNums1);
+sumNumbersArray(arrayNums2);
+
 // 10. Write a function that takes an array of numbers and returns the average of all the elements in the array.
 
 // 11. Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
