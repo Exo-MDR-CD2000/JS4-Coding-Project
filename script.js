@@ -172,9 +172,93 @@ sumNumbersArray(arrayNums1);
 sumNumbersArray(arrayNums2);
 
 // 10. Write a function that takes an array of numbers and returns the average of all the elements in the array.
+let arrayNums3 = [1, 3, 5, 7, 9];
+
+function averageNumbersArray (array) {
+    let sum = 0; // Initialize the sum of numbers
+
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i]; // Add each number to the sum
+        console.log("Calcualted Sum:", sum); // Display the sum of numbers
+    }
+    let average = sum / array.length; // Calculate the average of numbers
+    console.log("Average of Sum:", average); // Display the average of numbers
+    return average; // Return the average of numbers
+}
+
+averageNumbersArray(arrayNums3);
+
+
+
 
 // 11. Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
 
+let arrayNums4 = [23, 56, 78, 90, 10];
+let arrayNums5 = [23, 56, 78, 90, 11];
+
+// function compareAverageArrays (array1, array2) {
+//     let sum1 = 0; // Initialize the sum of numbers for array 1
+//     let sum2 = 0; // Initialize the sum of numbers for array 2
+
+//     for (let i = 0; i < array1.length; i++) {
+//         sum1 += array1[i]; // Add each number to the sum for array 1
+//         console.log("Sum1:", sum1); // Display the sum of numbers for array 1
+//     }
+//     for (let i = 0; i < array2.length; i++) {
+//         sum2 += array2[i]; // Add each number to the sum for array 2
+//         console.log("Sum2:", sum2); // Display the sum of numbers for array 2
+//     }
+
+//     let average1 = sum1 / array1.length; // Calculate the average of numbers for array 1
+//     let average2 = sum2 / array2.length; // Calculate the average of numbers for array 2
+
+//     console.log("Average1:", average1, "Average2:", average2); // Display the average of numbers for array 1 and array 2
+
+//     if (average1 > average2) {
+//         console.log("True"); // Return true if the average of numbers for array 1 is greater than the average of numbers for array 2
+//         return true;
+//     } else {
+//         console.log("False"); // Return false if the average of numbers for array 1 is not greater than the average of numbers for array 2
+//         return false;
+//     }
+// }
+
+// compareAverageArrays(arrayNums4, arrayNums5);
+
+
+
+function compareTwoAverages (array1, array2) {
+    console.log("Params:", array1, array2);
+    let total1 = 0; // Initialize the sum of numbers for array 1
+    let total2 = 0; // Initialize the sum of numbers for array 2
+
+    for (const number of array1) {
+        total1 += number; // Add each number to the sum for array 1
+        console.log("Current Number Loop1", number, "Total1:", total1); // Display the sum of numbers for array 1
+    }
+
+    for (const number of array2) {
+        total2 += number; // Add each number to the sum for array 2
+        console.log("Current Number Loop2", number, "Total2:", total2); // Display the sum of numbers for array 2
+    }
+
+    let average1 = total1 / array1.length; // Calculate the average of numbers for array 1
+    let average2 = total2 / array2.length; // Calculate the average of numbers for array 2
+    console.log("Average1:", average1, "Average2:", average2); // Display the average of numbers for array 1 and array 2
+
+    if (average1 > average2) {
+        console.log("True: Average 1 is greater"); // Return true if the average of numbers for array 1 is greater than the average of numbers for array 2
+        return true;
+    } else if (average1 < average2) {
+        console.log("False: Average 2 is greater"); // Return false if the average of numbers for array 1 is not greater than the average of numbers for array 2
+        return false;
+    } else {
+        console.log("Numbers are equal"); // Return false if the average of numbers for array 1 is not greater than the average of numbers for array 2
+    }
+    
+}
+
+compareTwoAverages(arrayNums4, arrayNums5);
 // 12. Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
 
 // 13. Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
