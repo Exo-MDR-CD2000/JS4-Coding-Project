@@ -12,6 +12,9 @@ Clone the repository into your directory of choice and open a new terminal windo
 - Use the Live Server extension in VS Code to host the site locally (or use your preferred method of choice).
 - Check console log for answers to questions based in script.js file
 
+## Link(s)
+
+- [Github Repo](https://github.com/Exo-MDR-CD2000/JS4-Coding-Project)
 
 ## License
 This project has no license.
